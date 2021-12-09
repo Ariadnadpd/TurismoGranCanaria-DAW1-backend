@@ -1,0 +1,27 @@
+<%= form_with(model: preguntasfrecuente) do |form| %>
+  <% if preguntasfrecuente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(preguntasfrecuente.errors.count, "error") %> prohibited this preguntasfrecuente from being saved:</h2>
+
+      <ul>
+        <% preguntasfrecuente.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pregunta %>
+    <%= form.text_field :pregunta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :respuesta %>
+    <%= form.text_field :respuesta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
