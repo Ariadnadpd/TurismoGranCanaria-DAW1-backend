@@ -1,0 +1,2 @@
+class ActPtematico < ApplicationRecord
+end

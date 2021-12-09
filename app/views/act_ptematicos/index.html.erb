@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Act Ptematicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th>Telefono</th>
+      <th>Sitioweb</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @act_ptematicos.each do |act_ptematico| %>
+      <tr>
+        <td><%= act_ptematico.titulo %></td>
+        <td><%= act_ptematico.subtitulo %></td>
+        <td><%= act_ptematico.localizacion %></td>
+        <td><%= act_ptematico.telefono %></td>
+        <td><%= act_ptematico.sitioweb %></td>
+        <td><%= link_to 'Show', act_ptematico %></td>
+        <td><%= link_to 'Edit', edit_act_ptematico_path(act_ptematico) %></td>
+        <td><%= link_to 'Destroy', act_ptematico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Act Ptematico', new_act_ptematico_path %>

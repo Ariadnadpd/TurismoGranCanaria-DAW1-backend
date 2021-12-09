@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @act_ptematico.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @act_ptematico.subtitulo %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @act_ptematico.localizacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @act_ptematico.telefono %>
+</p>
+
+<p>
+  <strong>Sitioweb:</strong>
+  <%= @act_ptematico.sitioweb %>
+</p>
+
+<%= link_to 'Edit', edit_act_ptematico_path(@act_ptematico) %> |
+<%= link_to 'Back', act_ptematicos_path %>
