@@ -1,0 +1,2 @@
+module ActBuceosHelper
+end

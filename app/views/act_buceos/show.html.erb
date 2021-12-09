@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @act_buceo.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @act_buceo.subtitulo %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @act_buceo.localizacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @act_buceo.telefono %>
+</p>
+
+<p>
+  <strong>Sitioweb:</strong>
+  <%= @act_buceo.sitioweb %>
+</p>
+
+<%= link_to 'Edit', edit_act_buceo_path(@act_buceo) %> |
+<%= link_to 'Back', act_buceos_path %>

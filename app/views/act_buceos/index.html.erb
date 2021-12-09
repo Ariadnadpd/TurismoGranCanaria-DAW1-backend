@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Act Buceos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th>Telefono</th>
+      <th>Sitioweb</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @act_buceos.each do |act_buceo| %>
+      <tr>
+        <td><%= act_buceo.titulo %></td>
+        <td><%= act_buceo.subtitulo %></td>
+        <td><%= act_buceo.localizacion %></td>
+        <td><%= act_buceo.telefono %></td>
+        <td><%= act_buceo.sitioweb %></td>
+        <td><%= link_to 'Show', act_buceo %></td>
+        <td><%= link_to 'Edit', edit_act_buceo_path(act_buceo) %></td>
+        <td><%= link_to 'Destroy', act_buceo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Act Buceo', new_act_buceo_path %>

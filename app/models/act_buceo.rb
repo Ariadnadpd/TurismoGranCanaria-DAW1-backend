@@ -1,0 +1,2 @@
+class ActBuceo < ApplicationRecord
+end
