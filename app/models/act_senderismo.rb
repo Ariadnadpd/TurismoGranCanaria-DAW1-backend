@@ -1,0 +1,2 @@
+class ActSenderismo < ApplicationRecord
+end

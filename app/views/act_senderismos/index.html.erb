@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Act Senderismos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Ruta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @act_senderismos.each do |act_senderismo| %>
+      <tr>
+        <td><%= act_senderismo.titulo %></td>
+        <td><%= act_senderismo.subtitulo %></td>
+        <td><%= act_senderismo.ruta %></td>
+        <td><%= link_to 'Show', act_senderismo %></td>
+        <td><%= link_to 'Edit', edit_act_senderismo_path(act_senderismo) %></td>
+        <td><%= link_to 'Destroy', act_senderismo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Act Senderismo', new_act_senderismo_path %>

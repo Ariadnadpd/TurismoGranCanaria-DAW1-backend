@@ -1,0 +1,32 @@
+<%= form_with(model: act_senderismo) do |form| %>
+  <% if act_senderismo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(act_senderismo.errors.count, "error") %> prohibited this act_senderismo from being saved:</h2>
+
+      <ul>
+        <% act_senderismo.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitulo %>
+    <%= form.text_field :subtitulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ruta %>
+    <%= form.text_field :ruta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

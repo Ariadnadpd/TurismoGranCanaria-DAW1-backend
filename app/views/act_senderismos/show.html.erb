@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @act_senderismo.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @act_senderismo.subtitulo %>
+</p>
+
+<p>
+  <strong>Ruta:</strong>
+  <%= @act_senderismo.ruta %>
+</p>
+
+<%= link_to 'Edit', edit_act_senderismo_path(@act_senderismo) %> |
+<%= link_to 'Back', act_senderismos_path %>

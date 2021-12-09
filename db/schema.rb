@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2021_12_09_125505) do
+ActiveRecord::Schema.define(version: 2021_12_09_133247) do
 
   create_table "act_buceos", force: :cascade do |t|
     t.string "titulo"
@@ -19,13 +18,21 @@ ActiveRecord::Schema.define(version: 2021_12_09_125505) do
     t.string "localizacion"
     t.string "telefono"
     t.string "sitioweb"
-=======
-ActiveRecord::Schema.define(version: 2021_12_09_122550) do
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "act_senderismos", force: :cascade do |t|
+    t.string "titulo"
+    t.string "subtitulo"
+    t.string "ruta"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "preguntasfrecuentes", force: :cascade do |t|
     t.string "pregunta"
     t.string "respuesta"
->>>>>>> 7e03f1326ea162b6b130f88fb32028d5a5a14148
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
