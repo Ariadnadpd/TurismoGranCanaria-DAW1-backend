@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Adnd Museos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th>Telefono</th>
+      <th>Sitioweb</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adnd_museos.each do |adnd_museo| %>
+      <tr>
+        <td><%= adnd_museo.titulo %></td>
+        <td><%= adnd_museo.subtitulo %></td>
+        <td><%= adnd_museo.localizacion %></td>
+        <td><%= adnd_museo.telefono %></td>
+        <td><%= adnd_museo.sitioweb %></td>
+        <td><%= link_to 'Show', adnd_museo %></td>
+        <td><%= link_to 'Edit', edit_adnd_museo_path(adnd_museo) %></td>
+        <td><%= link_to 'Destroy', adnd_museo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Adnd Museo', new_adnd_museo_path %>

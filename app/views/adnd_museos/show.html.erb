@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @adnd_museo.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @adnd_museo.subtitulo %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @adnd_museo.localizacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @adnd_museo.telefono %>
+</p>
+
+<p>
+  <strong>Sitioweb:</strong>
+  <%= @adnd_museo.sitioweb %>
+</p>
+
+<%= link_to 'Edit', edit_adnd_museo_path(@adnd_museo) %> |
+<%= link_to 'Back', adnd_museos_path %>

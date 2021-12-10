@@ -1,0 +1,2 @@
+class AdndMuseo < ApplicationRecord
+end
