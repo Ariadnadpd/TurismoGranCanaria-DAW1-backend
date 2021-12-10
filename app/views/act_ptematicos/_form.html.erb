@@ -1,7 +1,7 @@
 <%= form_with(model: act_ptematico) do |form| %>
   <% if act_ptematico.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(act_ptematico.errors.count, "error") %> prohibited this act_ptematico from being saved:</h2>
+      <h2><%= pluralize(act_ptematico.errors.count, "error") %> Prohibió que se guarde esta entrada:</h2>
 
       <ul>
         <% act_ptematico.errors.each do |error| %>
@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :titulo %>
+    <%= form.label "Título" %>
     <%= form.text_field :titulo %>
   </div>
 
   <div class="field">
-    <%= form.label :subtitulo %>
+    <%= form.label "Subtítulo" %>
     <%= form.text_field :subtitulo %>
   </div>
 
   <div class="field">
-    <%= form.label :localizacion %>
+    <%= form.label "Localización" %>
     <%= form.text_field :localizacion %>
   </div>
 
   <div class="field">
-    <%= form.label :telefono %>
-    <%= form.text_field :telefono %>
+    <%= form.label "Teléfono" %>
+    <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
   </div>
 
   <div class="field">
-    <%= form.label :sitioweb %>
-    <%= form.text_field :sitioweb %>
+    <%= form.label "Sitio web" %>
+    <%= form.text_field :sitioweb, placeholder: 'https://ejemplo.com' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar" %>
   </div>
 <% end %>

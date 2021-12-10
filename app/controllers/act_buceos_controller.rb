@@ -25,7 +25,7 @@ class ActBuceosController < ApplicationController
 
     respond_to do |format|
       if @act_buceo.save
-        format.html { redirect_to @act_buceo, notice: "Act buceo was successfully created." }
+        format.html { redirect_to @act_buceo, notice: "La nueva actividad de buceo fue creada correctamente." }
         format.json { render :show, status: :created, location: @act_buceo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ActBuceosController < ApplicationController
   def update
     respond_to do |format|
       if @act_buceo.update(act_buceo_params)
-        format.html { redirect_to @act_buceo, notice: "Act buceo was successfully updated." }
+        format.html { redirect_to @act_buceo, notice: "La actividad de buceo fue actualizada correctamente" }
         format.json { render :show, status: :ok, location: @act_buceo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ActBuceosController < ApplicationController
   def destroy
     @act_buceo.destroy
     respond_to do |format|
-      format.html { redirect_to act_buceos_url, notice: "Act buceo was successfully destroyed." }
+      format.html { redirect_to act_buceos_url, notice: "La actividad de buceo fue eliminada correctamente" }
       format.json { head :no_content }
     end
   end

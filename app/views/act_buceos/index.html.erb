@@ -1,16 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Act Buceos</h1>
+<h1>Listado de sitios de Buceos</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Titulo</th>
-      <th>Subtitulo</th>
-      <th>Localizacion</th>
-      <th>Telefono</th>
-      <th>Sitioweb</th>
-      <th colspan="3"></th>
+      <th>Título</th>
+      <th>Subtítulo</th>
+      <th>Localización</th>
+      <th>Teléfono</th>
+      <th>Sitio web</th>
+      <th colspan="3">Acciones</th>
     </tr>
   </thead>
 
@@ -22,9 +20,9 @@
         <td><%= act_buceo.localizacion %></td>
         <td><%= act_buceo.telefono %></td>
         <td><%= act_buceo.sitioweb %></td>
-        <td><%= link_to 'Show', act_buceo %></td>
-        <td><%= link_to 'Edit', edit_act_buceo_path(act_buceo) %></td>
-        <td><%= link_to 'Destroy', act_buceo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', act_buceo %></td>
+        <td><%= link_to 'Editar', edit_act_buceo_path(act_buceo) %></td>
+        <td><%= link_to 'Eliminar', act_buceo, method: :delete, data: { confirm: '¿Está seguro de eliminar esta entrada?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +30,6 @@
 
 <br>
 
-<%= link_to 'New Act Buceo', new_act_buceo_path %>
+<%= link_to 'Nueva entrada', new_act_buceo_path %>
+
+<p id="notice"><%= notice %></p>

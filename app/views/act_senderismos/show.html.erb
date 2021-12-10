@@ -1,12 +1,12 @@
-<p id="notice"><%= notice %></p>
+<h1>Senderismo: <%= @act_senderismo.subtitulo %></h1>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @act_senderismo.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @act_senderismo.subtitulo %>
 </p>
 
@@ -15,5 +15,7 @@
   <%= @act_senderismo.ruta %>
 </p>
 
-<%= link_to 'Edit', edit_act_senderismo_path(@act_senderismo) %> |
-<%= link_to 'Back', act_senderismos_path %>
+<%= link_to 'Editar', edit_act_senderismo_path(@act_senderismo) %> |
+<%= link_to 'Atrás', act_senderismos_path %>
+
+<p id="notice"><%= notice %></p>
