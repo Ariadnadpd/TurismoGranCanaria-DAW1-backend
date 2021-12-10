@@ -1,29 +1,31 @@
-<p id="notice"><%= notice %></p>
+<h1>Parque temático: <%= @act_ptematico.subtitulo%></h1>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @act_ptematico.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @act_ptematico.subtitulo %>
 </p>
 
 <p>
-  <strong>Localizacion:</strong>
+  <strong>Localización:</strong>
   <%= @act_ptematico.localizacion %>
 </p>
 
 <p>
-  <strong>Telefono:</strong>
+  <strong>Teléfono:</strong>
   <%= @act_ptematico.telefono %>
 </p>
 
 <p>
-  <strong>Sitioweb:</strong>
+  <strong>Sitio web:</strong>
   <%= @act_ptematico.sitioweb %>
 </p>
 
-<%= link_to 'Edit', edit_act_ptematico_path(@act_ptematico) %> |
-<%= link_to 'Back', act_ptematicos_path %>
+<%= link_to 'Editar', edit_act_ptematico_path(@act_ptematico) %> |
+<%= link_to 'Atrás', act_ptematicos_path %>
+
+<p id="notice"><%= notice %></p>

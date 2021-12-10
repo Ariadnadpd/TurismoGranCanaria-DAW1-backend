@@ -25,7 +25,7 @@ class ActPtematicosController < ApplicationController
 
     respond_to do |format|
       if @act_ptematico.save
-        format.html { redirect_to @act_ptematico, notice: "Act ptematico was successfully created." }
+        format.html { redirect_to @act_ptematico, notice: "La nueva actividad de parques temáticos fue creada correctamente." }
         format.json { render :show, status: :created, location: @act_ptematico }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ActPtematicosController < ApplicationController
   def update
     respond_to do |format|
       if @act_ptematico.update(act_ptematico_params)
-        format.html { redirect_to @act_ptematico, notice: "Act ptematico was successfully updated." }
+        format.html { redirect_to @act_ptematico, notice: "La actividad de parques temáticos fue actualizada correctamente" }
         format.json { render :show, status: :ok, location: @act_ptematico }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ActPtematicosController < ApplicationController
   def destroy
     @act_ptematico.destroy
     respond_to do |format|
-      format.html { redirect_to act_ptematicos_url, notice: "Act ptematico was successfully destroyed." }
+      format.html { redirect_to act_ptematicos_url, notice: "La actividad de parques temáticos fue eliminada correctamente." }
       format.json { head :no_content }
     end
   end

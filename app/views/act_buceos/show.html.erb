@@ -1,29 +1,31 @@
-<p id="notice"><%= notice %></p>
+<h1>Buceo: <%= @act_buceo.subtitulo %> </h1>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @act_buceo.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @act_buceo.subtitulo %>
 </p>
 
 <p>
-  <strong>Localizacion:</strong>
+  <strong>Localización:</strong>
   <%= @act_buceo.localizacion %>
 </p>
 
 <p>
-  <strong>Telefono:</strong>
+  <strong>Teléfono:</strong>
   <%= @act_buceo.telefono %>
 </p>
 
 <p>
-  <strong>Sitioweb:</strong>
+  <strong>Sitio web:</strong>
   <%= @act_buceo.sitioweb %>
 </p>
 
-<%= link_to 'Edit', edit_act_buceo_path(@act_buceo) %> |
-<%= link_to 'Back', act_buceos_path %>
+<%= link_to 'Editar', edit_act_buceo_path(@act_buceo) %> |
+<%= link_to 'Atrás', act_buceos_path %>
+
+<p id="notice"><%= notice %></p>

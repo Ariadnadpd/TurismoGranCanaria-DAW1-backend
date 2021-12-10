@@ -1,7 +1,7 @@
 <%= form_with(model: act_senderismo) do |form| %>
   <% if act_senderismo.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(act_senderismo.errors.count, "error") %> prohibited this act_senderismo from being saved:</h2>
+      <h2><%= pluralize(act_senderismo.errors.count, "error") %> Prohibió que se guarde esta entrada:</h2>
 
       <ul>
         <% act_senderismo.errors.each do |error| %>
@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :titulo %>
+    <%= form.label "Título" %>
     <%= form.text_field :titulo %>
   </div>
 
   <div class="field">
-    <%= form.label :subtitulo %>
+    <%= form.label "Subtítulo" %>
     <%= form.text_field :subtitulo %>
   </div>
 
   <div class="field">
-    <%= form.label :ruta %>
-    <%= form.text_field :ruta %>
+    <%= form.label "Ruta" %>
+    <%= form.text_field :ruta, placeholder: 'https://es.wikiloc.com/ruta' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar" %>
   </div>
 <% end %>

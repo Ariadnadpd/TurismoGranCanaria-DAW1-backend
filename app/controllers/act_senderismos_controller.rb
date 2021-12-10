@@ -25,7 +25,7 @@ class ActSenderismosController < ApplicationController
 
     respond_to do |format|
       if @act_senderismo.save
-        format.html { redirect_to @act_senderismo, notice: "Act senderismo was successfully created." }
+        format.html { redirect_to @act_senderismo, notice: "La nueva actividad de senderismo fue creada correctamente." }
         format.json { render :show, status: :created, location: @act_senderismo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ActSenderismosController < ApplicationController
   def update
     respond_to do |format|
       if @act_senderismo.update(act_senderismo_params)
-        format.html { redirect_to @act_senderismo, notice: "Act senderismo was successfully updated." }
+        format.html { redirect_to @act_senderismo, notice: "La actividad de senderismo fue actualizada correctamente." }
         format.json { render :show, status: :ok, location: @act_senderismo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ActSenderismosController < ApplicationController
   def destroy
     @act_senderismo.destroy
     respond_to do |format|
-      format.html { redirect_to act_senderismos_url, notice: "Act senderismo was successfully destroyed." }
+      format.html { redirect_to act_senderismos_url, notice: "La actividad de senderismo fue eliminada correctamente." }
       format.json { head :no_content }
     end
   end
