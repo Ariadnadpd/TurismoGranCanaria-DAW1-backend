@@ -1,7 +1,7 @@
 <%= form_with(model: art_canteri) do |form| %>
   <% if art_canteri.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(art_canteri.errors.count, "error") %>  Prohibió que se guarde este sitio: </h2>
+      <h2><%= pluralize(art_canteri.errors.count, "error") %>  prohibió que se guarde este sitio: </h2>
 
       <ul>
         <% art_canteri.errors.each do |error| %>
