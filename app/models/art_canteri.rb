@@ -1,0 +1,2 @@
+class ArtCanteri < ApplicationRecord
+end
