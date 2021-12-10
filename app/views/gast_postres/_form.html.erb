@@ -1,0 +1,52 @@
+<%= form_with(model: gast_postre) do |form| %>
+  <% if gast_postre.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gast_postre.errors.count, "error") %> prohibited this gast_postre from being saved:</h2>
+
+      <ul>
+        <% gast_postre.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitulo %>
+    <%= form.text_field :subtitulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localizacion %>
+    <%= form.text_field :localizacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefono %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rss_facebook %>
+    <%= form.text_field :rss_facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rss_instagram %>
+    <%= form.text_field :rss_instagram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :informacion %>
+    <%= form.text_field :informacion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

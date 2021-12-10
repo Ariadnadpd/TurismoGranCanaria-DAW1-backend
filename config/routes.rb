@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :gast_postres
   resources :art_ttradicionales
   resources :art_cuchilleris
   resources :art_canteris

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @gast_postre.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @gast_postre.subtitulo %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @gast_postre.localizacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @gast_postre.telefono %>
+</p>
+
+<p>
+  <strong>Rss facebook:</strong>
+  <%= @gast_postre.rss_facebook %>
+</p>
+
+<p>
+  <strong>Rss instagram:</strong>
+  <%= @gast_postre.rss_instagram %>
+</p>
+
+<p>
+  <strong>Informacion:</strong>
+  <%= @gast_postre.informacion %>
+</p>
+
+<%= link_to 'Edit', edit_gast_postre_path(@gast_postre) %> |
+<%= link_to 'Back', gast_postres_path %>
