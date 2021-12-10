@@ -1,0 +1,2 @@
+module ArtCuchillerisHelper
+end

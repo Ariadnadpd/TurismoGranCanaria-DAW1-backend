@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_10_104427) do
+ActiveRecord::Schema.define(version: 2021_12_10_112750) do
 
   create_table "act_buceos", force: :cascade do |t|
     t.string "titulo"
@@ -79,6 +79,17 @@ ActiveRecord::Schema.define(version: 2021_12_10_104427) do
   end
 
   create_table "art_canteris", force: :cascade do |t|
+    t.string "titulo"
+    t.string "subtitulo"
+    t.string "localizacion"
+    t.string "telefono"
+    t.string "informacion"
+    t.string "rss_facebook"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "art_cuchilleris", force: :cascade do |t|
     t.string "titulo"
     t.string "subtitulo"
     t.string "localizacion"

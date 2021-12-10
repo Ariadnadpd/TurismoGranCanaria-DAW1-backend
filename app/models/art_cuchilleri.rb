@@ -1,0 +1,2 @@
+class ArtCuchilleri < ApplicationRecord
+end
