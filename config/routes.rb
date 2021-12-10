@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :adnd_playas
   resources :adnd_pnaturales
   resources :adnd_museos
   resources :act_ptematicos

@@ -1,0 +1,32 @@
+<%= form_with(model: adnd_playa) do |form| %>
+  <% if adnd_playa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(adnd_playa.errors.count, "error") %> prohibited this adnd_playa from being saved:</h2>
+
+      <ul>
+        <% adnd_playa.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitulo %>
+    <%= form.text_field :subtitulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localizacion %>
+    <%= form.text_field :localizacion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

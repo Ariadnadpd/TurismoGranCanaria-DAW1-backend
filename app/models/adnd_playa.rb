@@ -1,0 +1,2 @@
+class AdndPlaya < ApplicationRecord
+end

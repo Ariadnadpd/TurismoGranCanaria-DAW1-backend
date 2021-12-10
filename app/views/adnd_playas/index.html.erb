@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Adnd Playas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adnd_playas.each do |adnd_playa| %>
+      <tr>
+        <td><%= adnd_playa.titulo %></td>
+        <td><%= adnd_playa.subtitulo %></td>
+        <td><%= adnd_playa.localizacion %></td>
+        <td><%= link_to 'Show', adnd_playa %></td>
+        <td><%= link_to 'Edit', edit_adnd_playa_path(adnd_playa) %></td>
+        <td><%= link_to 'Destroy', adnd_playa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Adnd Playa', new_adnd_playa_path %>
