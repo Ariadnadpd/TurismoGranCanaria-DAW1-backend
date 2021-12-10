@@ -25,7 +25,7 @@ class PreguntasfrecuentesController < ApplicationController
 
     respond_to do |format|
       if @preguntasfrecuente.save
-        format.html { redirect_to @preguntasfrecuente, notice: "Preguntasfrecuente was successfully created." }
+        format.html { redirect_to @preguntasfrecuente, notice: "La nueva pregunta frecuente fue creada correctamente." }
         format.json { render :show, status: :created, location: @preguntasfrecuente }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PreguntasfrecuentesController < ApplicationController
   def update
     respond_to do |format|
       if @preguntasfrecuente.update(preguntasfrecuente_params)
-        format.html { redirect_to @preguntasfrecuente, notice: "Preguntasfrecuente was successfully updated." }
+        format.html { redirect_to @preguntasfrecuente, notice: "La pregunta frecuente fue actualizada correctamente." }
         format.json { render :show, status: :ok, location: @preguntasfrecuente }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class PreguntasfrecuentesController < ApplicationController
   def destroy
     @preguntasfrecuente.destroy
     respond_to do |format|
-      format.html { redirect_to preguntasfrecuentes_url, notice: "Preguntasfrecuente was successfully destroyed." }
+      format.html { redirect_to preguntasfrecuentes_url, notice: "La pregunta frecuente fue eliminada correctamente." }
       format.json { head :no_content }
     end
   end

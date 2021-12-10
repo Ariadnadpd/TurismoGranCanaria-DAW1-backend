@@ -1,7 +1,7 @@
 <%= form_with(model: preguntasfrecuente) do |form| %>
   <% if preguntasfrecuente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(preguntasfrecuente.errors.count, "error") %> prohibited this preguntasfrecuente from being saved:</h2>
+      <h2><%= pluralize(preguntasfrecuente.errors.count, "error") %> prohibió que se guarde esta entrada:</h2>
 
       <ul>
         <% preguntasfrecuente.errors.each do |error| %>
@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= form.label :pregunta %>
-    <%= form.text_field :pregunta %>
+    <%= form.text_area :pregunta %>
   </div>
 
   <div class="field">
     <%= form.label :respuesta %>
-    <%= form.text_field :respuesta %>
+    <%= form.text_area :respuesta %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar" %>
   </div>
 <% end %>
