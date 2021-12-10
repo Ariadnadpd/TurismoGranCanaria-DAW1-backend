@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Adnd Pnaturales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Ruta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adnd_pnaturales.each do |adnd_pnaturale| %>
+      <tr>
+        <td><%= adnd_pnaturale.titulo %></td>
+        <td><%= adnd_pnaturale.subtitulo %></td>
+        <td><%= adnd_pnaturale.ruta %></td>
+        <td><%= link_to 'Show', adnd_pnaturale %></td>
+        <td><%= link_to 'Edit', edit_adnd_pnaturale_path(adnd_pnaturale) %></td>
+        <td><%= link_to 'Destroy', adnd_pnaturale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Adnd Pnaturale', new_adnd_pnaturale_path %>

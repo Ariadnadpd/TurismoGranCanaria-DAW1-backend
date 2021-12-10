@@ -1,0 +1,32 @@
+<%= form_with(model: adnd_pnaturale) do |form| %>
+  <% if adnd_pnaturale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(adnd_pnaturale.errors.count, "error") %> prohibited this adnd_pnaturale from being saved:</h2>
+
+      <ul>
+        <% adnd_pnaturale.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitulo %>
+    <%= form.text_field :subtitulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ruta %>
+    <%= form.text_field :ruta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

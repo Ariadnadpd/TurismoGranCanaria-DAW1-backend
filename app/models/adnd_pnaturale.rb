@@ -1,0 +1,2 @@
+class AdndPnaturale < ApplicationRecord
+end
