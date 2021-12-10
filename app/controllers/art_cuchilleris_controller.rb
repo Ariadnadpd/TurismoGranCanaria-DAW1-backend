@@ -25,7 +25,7 @@ class ArtCuchillerisController < ApplicationController
 
     respond_to do |format|
       if @art_cuchilleri.save
-        format.html { redirect_to @art_cuchilleri, notice: "Art cuchilleri was successfully created." }
+        format.html { redirect_to @art_cuchilleri, notice: "El sitio de Cuchillos canarios fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_cuchilleri }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ArtCuchillerisController < ApplicationController
   def update
     respond_to do |format|
       if @art_cuchilleri.update(art_cuchilleri_params)
-        format.html { redirect_to @art_cuchilleri, notice: "Art cuchilleri was successfully updated." }
+        format.html { redirect_to @art_cuchilleri, notice: "El sitio de Cuchillos canarios fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @art_cuchilleri }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ArtCuchillerisController < ApplicationController
   def destroy
     @art_cuchilleri.destroy
     respond_to do |format|
-      format.html { redirect_to art_cuchilleris_url, notice: "Art cuchilleri was successfully destroyed." }
+      format.html { redirect_to art_cuchilleris_url, notice: "El sitio de Cuchillos canarios fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

@@ -25,7 +25,7 @@ class ArtTtradicionalesController < ApplicationController
 
     respond_to do |format|
       if @art_ttradicionale.save
-        format.html { redirect_to @art_ttradicionale, notice: "Art ttradicionale was successfully created." }
+        format.html { redirect_to @art_ttradicionale, notice: "El sitio de Trajes tradicionales fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_ttradicionale }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ArtTtradicionalesController < ApplicationController
   def update
     respond_to do |format|
       if @art_ttradicionale.update(art_ttradicionale_params)
-        format.html { redirect_to @art_ttradicionale, notice: "Art ttradicionale was successfully updated." }
+        format.html { redirect_to @art_ttradicionale, notice: "El sitio de Trajes tradicionales fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @art_ttradicionale }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ArtTtradicionalesController < ApplicationController
   def destroy
     @art_ttradicionale.destroy
     respond_to do |format|
-      format.html { redirect_to art_ttradicionales_url, notice: "Art ttradicionale was successfully destroyed." }
+      format.html { redirect_to art_ttradicionales_url, notice: "El sitio de Trajes tradicionales fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

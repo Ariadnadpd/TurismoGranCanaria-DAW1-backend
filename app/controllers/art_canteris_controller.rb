@@ -25,7 +25,7 @@ class ArtCanterisController < ApplicationController
 
     respond_to do |format|
       if @art_canteri.save
-        format.html { redirect_to @art_canteri, notice: "Art canteri was successfully created." }
+        format.html { redirect_to @art_canteri, notice: "El nuevo sitio de Cantería fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_canteri }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ArtCanterisController < ApplicationController
   def update
     respond_to do |format|
       if @art_canteri.update(art_canteri_params)
-        format.html { redirect_to @art_canteri, notice: "Art canteri was successfully updated." }
+        format.html { redirect_to @art_canteri, notice: "El sitio de Cantería fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @art_canteri }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ArtCanterisController < ApplicationController
   def destroy
     @art_canteri.destroy
     respond_to do |format|
-      format.html { redirect_to art_canteris_url, notice: "Art canteri was successfully destroyed." }
+      format.html { redirect_to art_canteris_url, notice: "El sitio de Cantería fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

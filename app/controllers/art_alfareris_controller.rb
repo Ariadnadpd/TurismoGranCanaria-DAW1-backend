@@ -25,7 +25,7 @@ class ArtAlfarerisController < ApplicationController
 
     respond_to do |format|
       if @art_alfareri.save
-        format.html { redirect_to @art_alfareri, notice: "Art alfareri was successfully created." }
+        format.html { redirect_to @art_alfareri, notice: "El nuevo sitio de Alfarería fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_alfareri }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ArtAlfarerisController < ApplicationController
   def update
     respond_to do |format|
       if @art_alfareri.update(art_alfareri_params)
-        format.html { redirect_to @art_alfareri, notice: "Art alfareri was successfully updated." }
+        format.html { redirect_to @art_alfareri, notice: "El sitio de Alfarería fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @art_alfareri }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ArtAlfarerisController < ApplicationController
   def destroy
     @art_alfareri.destroy
     respond_to do |format|
-      format.html { redirect_to art_alfareris_url, notice: "Art alfareri was successfully destroyed." }
+      format.html { redirect_to art_alfareris_url, notice: "El sitio de Alfarería fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

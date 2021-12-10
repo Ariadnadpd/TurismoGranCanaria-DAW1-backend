@@ -1,17 +1,16 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Art Canteris</h1>
+<h1>Listado de sitios de Cantería</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Titulo</th>
-      <th>Subtitulo</th>
-      <th>Localizacion</th>
-      <th>Telefono</th>
-      <th>Informacion</th>
-      <th>Rss facebook</th>
-      <th colspan="3"></th>
+      <th>Título</th>
+      <th>Subtítulo</th>
+      <th>Localización</th>
+      <th>Teléfono</th>
+      <th>Información</th>
+      <th>Página de Facebook</th>
+      <th colspan="3">Acciones</th>
     </tr>
   </thead>
 
@@ -24,9 +23,9 @@
         <td><%= art_canteri.telefono %></td>
         <td><%= art_canteri.informacion %></td>
         <td><%= art_canteri.rss_facebook %></td>
-        <td><%= link_to 'Show', art_canteri %></td>
-        <td><%= link_to 'Edit', edit_art_canteri_path(art_canteri) %></td>
-        <td><%= link_to 'Destroy', art_canteri, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', art_canteri %></td>
+        <td><%= link_to 'Editar', edit_art_canteri_path(art_canteri) %></td>
+        <td><%= link_to 'Eliminar', art_canteri, method: :delete, data: { confirm: '¿Está seguro de eliminar esta entrada?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +33,6 @@
 
 <br>
 
-<%= link_to 'New Art Canteri', new_art_canteri_path %>
+<%= link_to 'Nueva entrada', new_art_canteri_path %>
+
+<p id="notice"><%= notice %></p>

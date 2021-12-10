@@ -1,22 +1,23 @@
-<p id="notice"><%= notice %></p>
+
+<h1>Alfarería: <%= @art_alfareri.subtitulo%></h1>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @art_alfareri.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @art_alfareri.subtitulo %>
 </p>
 
 <p>
-  <strong>Localizacion:</strong>
+  <strong>Localización:</strong>
   <%= @art_alfareri.localizacion %>
 </p>
 
 <p>
-  <strong>Telefono:</strong>
+  <strong>Teléfono:</strong>
   <%= @art_alfareri.telefono %>
 </p>
 
@@ -26,14 +27,16 @@
 </p>
 
 <p>
-  <strong>Informacion:</strong>
+  <strong>Información:</strong>
   <%= @art_alfareri.informacion %>
 </p>
 
 <p>
-  <strong>Rss facebook:</strong>
+  <strong>Página de Facebook:</strong>
   <%= @art_alfareri.rss_facebook %>
 </p>
 
-<%= link_to 'Edit', edit_art_alfareri_path(@art_alfareri) %> |
-<%= link_to 'Back', art_alfareris_path %>
+<%= link_to 'Editar', edit_art_alfareri_path(@art_alfareri) %> |
+<%= link_to 'Atrás', art_alfareris_path %>
+
+<p id="notice"><%= notice %></p>
