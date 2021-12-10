@@ -25,7 +25,7 @@ class AdndMuseosController < ApplicationController
 
     respond_to do |format|
       if @adnd_museo.save
-        format.html { redirect_to @adnd_museo, notice: "Adnd museo was successfully created." }
+        format.html { redirect_to @adnd_museo, notice: "El nuevo sitio de museo fue creado correctamente." }
         format.json { render :show, status: :created, location: @adnd_museo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class AdndMuseosController < ApplicationController
   def update
     respond_to do |format|
       if @adnd_museo.update(adnd_museo_params)
-        format.html { redirect_to @adnd_museo, notice: "Adnd museo was successfully updated." }
+        format.html { redirect_to @adnd_museo, notice: "El sitio de museo fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @adnd_museo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class AdndMuseosController < ApplicationController
   def destroy
     @adnd_museo.destroy
     respond_to do |format|
-      format.html { redirect_to adnd_museos_url, notice: "Adnd museo was successfully destroyed." }
+      format.html { redirect_to adnd_museos_url, notice: "El sitio de museo fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

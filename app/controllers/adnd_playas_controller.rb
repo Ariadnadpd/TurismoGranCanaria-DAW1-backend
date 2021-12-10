@@ -25,7 +25,7 @@ class AdndPlayasController < ApplicationController
 
     respond_to do |format|
       if @adnd_playa.save
-        format.html { redirect_to @adnd_playa, notice: "Adnd playa was successfully created." }
+        format.html { redirect_to @adnd_playa, notice: "El sitio de playa fue creado correctamente." }
         format.json { render :show, status: :created, location: @adnd_playa }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class AdndPlayasController < ApplicationController
   def update
     respond_to do |format|
       if @adnd_playa.update(adnd_playa_params)
-        format.html { redirect_to @adnd_playa, notice: "Adnd playa was successfully updated." }
+        format.html { redirect_to @adnd_playa, notice: "El sitio de playa fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @adnd_playa }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class AdndPlayasController < ApplicationController
   def destroy
     @adnd_playa.destroy
     respond_to do |format|
-      format.html { redirect_to adnd_playas_url, notice: "Adnd playa was successfully destroyed." }
+      format.html { redirect_to adnd_playas_url, notice: "El sitio de playa fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

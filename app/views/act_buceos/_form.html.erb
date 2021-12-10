@@ -1,7 +1,7 @@
 <%= form_with(model: act_buceo) do |form| %>
   <% if act_buceo.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(act_buceo.errors.count, "error") %> Prohibió que se guarde esta entrada: </h2>
+      <h2><%= pluralize(act_buceo.errors.count, "error") %> prohibió que se guarde esta entrada: </h2>
 
       <ul>
         <% act_buceo.errors.each do |error| %>

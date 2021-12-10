@@ -1,7 +1,7 @@
 <%= form_with(model: adnd_pnaturale) do |form| %>
   <% if adnd_pnaturale.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(adnd_pnaturale.errors.count, "error") %> prohibited this adnd_pnaturale from being saved:</h2>
+      <h2><%= pluralize(adnd_pnaturale.errors.count, "error") %> prohibió que se guarde esta entrada:</h2>
 
       <ul>
         <% adnd_pnaturale.errors.each do |error| %>
@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :titulo %>
+    <%= form.label "Título" %>
     <%= form.text_field :titulo %>
   </div>
 
   <div class="field">
-    <%= form.label :subtitulo %>
+    <%= form.label "Subtítulo" %>
     <%= form.text_field :subtitulo %>
   </div>
 
   <div class="field">
-    <%= form.label :ruta %>
+    <%= form.label "Ruta" %>
     <%= form.text_field :ruta %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar" %>
   </div>
 <% end %>

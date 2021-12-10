@@ -25,7 +25,7 @@ class AdndPnaturalesController < ApplicationController
 
     respond_to do |format|
       if @adnd_pnaturale.save
-        format.html { redirect_to @adnd_pnaturale, notice: "Adnd pnaturale was successfully created." }
+        format.html { redirect_to @adnd_pnaturale, notice: "El nuevo sitio de parque natural fue creado correctamente." }
         format.json { render :show, status: :created, location: @adnd_pnaturale }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class AdndPnaturalesController < ApplicationController
   def update
     respond_to do |format|
       if @adnd_pnaturale.update(adnd_pnaturale_params)
-        format.html { redirect_to @adnd_pnaturale, notice: "Adnd pnaturale was successfully updated." }
+        format.html { redirect_to @adnd_pnaturale, notice: "El sitio de parque natural fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @adnd_pnaturale }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class AdndPnaturalesController < ApplicationController
   def destroy
     @adnd_pnaturale.destroy
     respond_to do |format|
-      format.html { redirect_to adnd_pnaturales_url, notice: "Adnd pnaturale was successfully destroyed." }
+      format.html { redirect_to adnd_pnaturales_url, notice: "El sitio de parque natural fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

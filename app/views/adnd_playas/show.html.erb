@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<h1>Playa: <%= @adnd_playa.subtitulo %></h1>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @adnd_playa.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @adnd_playa.subtitulo %>
 </p>
 
 <p>
-  <strong>Localizacion:</strong>
+  <strong>Localización:</strong>
   <%= @adnd_playa.localizacion %>
 </p>
 
-<%= link_to 'Edit', edit_adnd_playa_path(@adnd_playa) %> |
-<%= link_to 'Back', adnd_playas_path %>
+<%= link_to 'Editar', edit_adnd_playa_path(@adnd_playa) %> |
+<%= link_to 'Atrás', adnd_playas_path %>
+
+<p id="notice"><%= notice %></p>
