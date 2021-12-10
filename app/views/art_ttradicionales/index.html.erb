@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Art Ttradicionales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th>Telefono</th>
+      <th>Informacion</th>
+      <th>Rss facebook</th>
+      <th>Rss instagram</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @art_ttradicionales.each do |art_ttradicionale| %>
+      <tr>
+        <td><%= art_ttradicionale.titulo %></td>
+        <td><%= art_ttradicionale.subtitulo %></td>
+        <td><%= art_ttradicionale.localizacion %></td>
+        <td><%= art_ttradicionale.telefono %></td>
+        <td><%= art_ttradicionale.informacion %></td>
+        <td><%= art_ttradicionale.rss_facebook %></td>
+        <td><%= art_ttradicionale.rss_instagram %></td>
+        <td><%= link_to 'Show', art_ttradicionale %></td>
+        <td><%= link_to 'Edit', edit_art_ttradicionale_path(art_ttradicionale) %></td>
+        <td><%= link_to 'Destroy', art_ttradicionale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Art Ttradicionale', new_art_ttradicionale_path %>

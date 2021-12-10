@@ -1,0 +1,2 @@
+class ArtTtradicionale < ApplicationRecord
+end
