@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @gast_plato.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @gast_plato.subtitulo %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @gast_plato.localizacion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @gast_plato.telefono %>
+</p>
+
+<p>
+  <strong>Informacion:</strong>
+  <%= @gast_plato.informacion %>
+</p>
+
+<p>
+  <strong>Rss facebook:</strong>
+  <%= @gast_plato.rss_facebook %>
+</p>
+
+<%= link_to 'Edit', edit_gast_plato_path(@gast_plato) %> |
+<%= link_to 'Back', gast_platos_path %>

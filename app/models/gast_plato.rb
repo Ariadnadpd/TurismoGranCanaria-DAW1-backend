@@ -1,0 +1,2 @@
+class GastPlato < ApplicationRecord
+end
