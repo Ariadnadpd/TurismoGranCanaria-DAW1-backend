@@ -1,0 +1,2 @@
+class ArtAlfareri < ApplicationRecord
+end

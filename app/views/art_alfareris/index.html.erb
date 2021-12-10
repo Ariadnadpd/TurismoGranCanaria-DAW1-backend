@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Art Alfareris</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Subtitulo</th>
+      <th>Localizacion</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th>Informacion</th>
+      <th>Rss facebook</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @art_alfareris.each do |art_alfareri| %>
+      <tr>
+        <td><%= art_alfareri.titulo %></td>
+        <td><%= art_alfareri.subtitulo %></td>
+        <td><%= art_alfareri.localizacion %></td>
+        <td><%= art_alfareri.telefono %></td>
+        <td><%= art_alfareri.email %></td>
+        <td><%= art_alfareri.informacion %></td>
+        <td><%= art_alfareri.rss_facebook %></td>
+        <td><%= link_to 'Show', art_alfareri %></td>
+        <td><%= link_to 'Edit', edit_art_alfareri_path(art_alfareri) %></td>
+        <td><%= link_to 'Destroy', art_alfareri, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Art Alfareri', new_art_alfareri_path %>
