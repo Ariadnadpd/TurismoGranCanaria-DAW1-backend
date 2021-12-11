@@ -25,7 +25,7 @@ class GastPlatosController < ApplicationController
 
     respond_to do |format|
       if @gast_plato.save
-        format.html { redirect_to @gast_plato, notice: "Gast plato was successfully created." }
+        format.html { redirect_to @gast_plato, notice: "El nuevo sitio de platos típicos fue creado correctamente." }
         format.json { render :show, status: :created, location: @gast_plato }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GastPlatosController < ApplicationController
   def update
     respond_to do |format|
       if @gast_plato.update(gast_plato_params)
-        format.html { redirect_to @gast_plato, notice: "Gast plato was successfully updated." }
+        format.html { redirect_to @gast_plato, notice: "El sitio de platos típicos fue actualizado correctamente." }
         format.json { render :show, status: :ok, location: @gast_plato }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class GastPlatosController < ApplicationController
   def destroy
     @gast_plato.destroy
     respond_to do |format|
-      format.html { redirect_to gast_platos_url, notice: "Gast plato was successfully destroyed." }
+      format.html { redirect_to gast_platos_url, notice: "El sitio de platos típicos fue eliminado correctamente." }
       format.json { head :no_content }
     end
   end

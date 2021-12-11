@@ -25,7 +25,7 @@ class ArtTtradicionalesController < ApplicationController
 
     respond_to do |format|
       if @art_ttradicionale.save
-        format.html { redirect_to @art_ttradicionale, notice: "El sitio de Trajes tradicionales fue creado correctamente." }
+        format.html { redirect_to @art_ttradicionale, notice: "El nuevo sitio de Trajes tradicionales fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_ttradicionale }
       else
         format.html { render :new, status: :unprocessable_entity }

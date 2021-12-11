@@ -1,17 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Gast Platos</h1>
+<h1>Listado de sitios de Platos típicos en Gran Canaria</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Titulo</th>
-      <th>Subtitulo</th>
-      <th>Localizacion</th>
-      <th>Telefono</th>
-      <th>Informacion</th>
-      <th>Rss facebook</th>
-      <th colspan="3"></th>
+      <th>Título</th>
+      <th>Subtítulo</th>
+      <th>Localización</th>
+      <th>Teléfono</th>
+      <th>Información</th>
+      <th>Página de Facebook</th>
+      <th colspan="3">Acciones</th>
     </tr>
   </thead>
 
@@ -24,9 +22,9 @@
         <td><%= gast_plato.telefono %></td>
         <td><%= gast_plato.informacion %></td>
         <td><%= gast_plato.rss_facebook %></td>
-        <td><%= link_to 'Show', gast_plato %></td>
-        <td><%= link_to 'Edit', edit_gast_plato_path(gast_plato) %></td>
-        <td><%= link_to 'Destroy', gast_plato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', gast_plato %></td>
+        <td><%= link_to 'Editar', edit_gast_plato_path(gast_plato) %></td>
+        <td><%= link_to 'Eliminar', gast_plato, method: :delete, data: { confirm: '¿Está seguro de eliminar esta entrada?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +32,5 @@
 
 <br>
 
-<%= link_to 'New Gast Plato', new_gast_plato_path %>
+<%= link_to 'Nueva entrada', new_gast_plato_path %>
+<p id="notice"><%= notice %></p>

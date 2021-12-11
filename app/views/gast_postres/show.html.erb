@@ -1,39 +1,41 @@
-<p id="notice"><%= notice %></p>
 
+<h1>Sitio de Postres típicos: <%= @gast_postre.subtitulo%></h1>
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @gast_postre.titulo %>
 </p>
 
 <p>
-  <strong>Subtitulo:</strong>
+  <strong>Subtítulo:</strong>
   <%= @gast_postre.subtitulo %>
 </p>
 
 <p>
-  <strong>Localizacion:</strong>
+  <strong>Localización:</strong>
   <%= @gast_postre.localizacion %>
 </p>
 
 <p>
-  <strong>Telefono:</strong>
+  <strong>Teléfono:</strong>
   <%= @gast_postre.telefono %>
 </p>
 
 <p>
-  <strong>Rss facebook:</strong>
+  <strong>Página de Facebook:</strong>
   <%= @gast_postre.rss_facebook %>
 </p>
 
 <p>
-  <strong>Rss instagram:</strong>
+  <strong>Página de Instagram:</strong>
   <%= @gast_postre.rss_instagram %>
 </p>
 
 <p>
-  <strong>Informacion:</strong>
+  <strong>Información:</strong>
   <%= @gast_postre.informacion %>
 </p>
 
-<%= link_to 'Edit', edit_gast_postre_path(@gast_postre) %> |
-<%= link_to 'Back', gast_postres_path %>
+<%= link_to 'Editar', edit_gast_postre_path(@gast_postre) %> |
+<%= link_to 'Atrás', gast_postres_path %>
+
+<p id="notice"><%= notice %></p>

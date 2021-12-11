@@ -25,7 +25,7 @@ class ArtCuchillerisController < ApplicationController
 
     respond_to do |format|
       if @art_cuchilleri.save
-        format.html { redirect_to @art_cuchilleri, notice: "El sitio de Cuchillos canarios fue creado correctamente." }
+        format.html { redirect_to @art_cuchilleri, notice: "El nuevo sitio de Cuchillos canarios fue creado correctamente." }
         format.json { render :show, status: :created, location: @art_cuchilleri }
       else
         format.html { render :new, status: :unprocessable_entity }

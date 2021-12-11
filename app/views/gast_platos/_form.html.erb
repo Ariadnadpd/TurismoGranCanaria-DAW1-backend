@@ -1,7 +1,7 @@
 <%= form_with(model: gast_plato) do |form| %>
   <% if gast_plato.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(gast_plato.errors.count, "error") %> prohibited this gast_plato from being saved:</h2>
+      <h2><%= pluralize(gast_plato.errors.count, "error") %> prohibió que se guarde este sitio de platos típicos: </h2>
 
       <ul>
         <% gast_plato.errors.each do |error| %>
@@ -12,36 +12,36 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :titulo %>
+    <%= form.label "Título" %>
     <%= form.text_field :titulo %>
   </div>
 
   <div class="field">
-    <%= form.label :subtitulo %>
+    <%= form.label "Subtítulo" %>
     <%= form.text_field :subtitulo %>
   </div>
 
   <div class="field">
-    <%= form.label :localizacion %>
+    <%= form.label "Localización" %>
     <%= form.text_field :localizacion %>
   </div>
 
   <div class="field">
-    <%= form.label :telefono %>
-    <%= form.text_field :telefono %>
+    <%= form.label "Teléfono" %>
+    <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
   </div>
 
   <div class="field">
-    <%= form.label :informacion %>
-    <%= form.text_field :informacion %>
+    <%= form.label "Información" %>
+    <%= form.url_field :informacion, placeholder: 'https://ejemplo.com' %>
   </div>
 
   <div class="field">
-    <%= form.label :rss_facebook %>
-    <%= form.text_field :rss_facebook %>
+    <%= form.label "Página de Facebook" %>
+    <%= form.url_field :rss_facebook, placeholder: 'https://www.facebook.com/Nombre'  %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar"%>
   </div>
 <% end %>
