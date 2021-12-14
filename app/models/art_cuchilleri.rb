@@ -16,9 +16,7 @@ class ArtCuchilleri < ApplicationRecord
         format: { with: /\d{9}\z/i, message: ': ¡El teléfono debe contener 9 números!'},
         length: { maximum: 9, message: ': ¡El teléfono no puede contener más de 9 números!'}
     validates :informacion,
-       presence: {presence: true, message: ': ¡La información no puede estar en blanco, es un campo requerido!'},
        length: {minimum: 14, message: ': ¡La información debe de tener como mínimo 14 caracteres!'}
     validates :rss_facebook,
-        presence: {presence: true, message: ': ¡La página de Facebook no puede estar en blanco, es un campo requerido!'},
         length: {minimum: 14, message: ': ¡La página de Facebook debe de tener como mínimo 14 caracteres!'}
 end

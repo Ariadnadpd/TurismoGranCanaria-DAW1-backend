@@ -19,6 +19,5 @@ class GastPlato < ApplicationRecord
        presence: {presence: true, message: ': ¡La información no puede estar en blanco, es un campo requerido!'},
        length: {minimum: 14, message: ': ¡La información debe de tener como mínimo 14 caracteres!'}
     validates :rss_facebook,
-        presence: {presence: true, message: ': ¡La página de Facebook no puede estar en blanco, es un campo requerido!'},
         length: {minimum: 14, message: ': ¡La página de Facebook debe de tener como mínimo 14 caracteres!'}
 end
