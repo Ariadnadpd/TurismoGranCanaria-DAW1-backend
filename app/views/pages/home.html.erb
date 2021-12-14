@@ -8,23 +8,25 @@
     <h1>INICIO</h1>
   
     <h3>ARTESANIA</h3>
-        <a href = "http://127.0.0.1:3000/art_alfareris" target = "_self">Artesania - Alfarería<br></a>
-        <a href = "http://127.0.0.1:3000/art_canteris" target = "_self">Artesania - Cantería<br></a>
-        <a href = "http://127.0.0.1:3000/art_cuchilleris" target = "_self">Artesania - Cuchillería<br></a>
-        <a href = "http://127.0.0.1:3000/art_ttradicionales" target = "_self">Artesania - Trajes tradicionales<br></a>
+        <%= link_to 'Artesania - Alfarería', art_alfareris_path %><br>
+        <%= link_to 'Artesania - Cantería', art_canteris_path %><br>
+        <%= link_to 'Artesania - Cuchillería', art_cuchilleris_path %><br>
+        <%= link_to 'Artesania - Trajes tradicionales', art_ttradicionales_path %><br>
+    
     <h3>GASTRONOMIA</h3>
-        <a href = "http://127.0.0.1:3000/gast_platos" target = "_self">Gastronomia - Platos<br></a>
-        <a href = "http://127.0.0.1:3000/gast_postres" target = "_self">Gastronomia - Postres<br></a>
+        <%= link_to 'Gastronomia - Platos', gast_platos_path %><br>
+        <%= link_to 'Gastronomia - Postres', gast_postres_path %><br>
     <h3>A DONDE IR</h3>
-        <a href = "http://127.0.0.1:3000/adnd_museos" target = "_self">A donde ir - Museos<br></a>
-        <a href = "http://127.0.0.1:3000/adnd_pnaturales" target = "_self">A donde ir - Parques Naturales<br></a>
-        <a href = "http://127.0.0.1:3000/adnd_playas" target = "_self">A donde ir - Playas<br></a>
+        <%= link_to 'A donde ir - Museos', adnd_museos_path %><br>
+        <%= link_to 'A donde ir - Parques Naturales', adnd_pnaturales_path %><br>
+        <%= link_to 'A donde ir - Playas', adnd_playas_path %><br>
     <h3>ACTIVIDADES</h3>
-        <a href = "http://127.0.0.1:3000/act_buceos" target = "_self">Actividades - Buceo<br></a>
-        <a href = "http://127.0.0.1:3000/act_ptematicos" target = "_self">Actividades - Parques temáticos<br></a>
-        <a href = "http://127.0.0.1:3000/act_senderismos" target = "_self">Actividades - Senderismo<br></a>
+        <%= link_to 'Actividades - Buceo', act_buceos_path %><br>
+        <%= link_to 'Actividades - Parques temáticos', act_ptematicos_path %><br>
+        <%= link_to 'Actividades - Senderismo', act_senderismos_path %><br>
 
     <h3>PREGUNTAS FRECUENTES</h3>
-        <a href = "http://127.0.0.1:3000/preguntasfrecuentes" target = "_self">Preguntas Frecuentes<br></a>
+        <%= link_to 'Preguntas Frecuentes', preguntasfrecuentes_path %><br>
+
   </body>
 </html>
