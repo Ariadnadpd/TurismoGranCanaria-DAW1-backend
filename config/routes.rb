@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'pages#home'
 
-  
   resources :gast_platos
   resources :gast_postres
   resources :art_ttradicionales
