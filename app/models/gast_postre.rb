@@ -2,7 +2,7 @@ class GastPostre < ApplicationRecord
     validates :titulo,
         presence: {presence: true, message: ': ¡El título no puede estar en blanco, es un campo requerido!'}, 
         length: { maximum: 50, message: ': ¡El título debe de tener como máximo 50 caracteres!'},
-        length: { minimum: 5, message: ': ¡El título debe de tener como mínimo 5 caracteres!'}
+        length: { minimum: 4, message: ': ¡El título debe de tener como mínimo 5 caracteres!'}
     validates :subtitulo,
         presence: {presence: true, message: ': ¡El subtítulo no puede estar en blanco, es un campo requerido!'},
         length: { maximum: 50, message: ': ¡El subtítulo debe de tener como máximo 50 caracteres!'},
@@ -15,11 +15,5 @@ class GastPostre < ApplicationRecord
         presence: {presence: true, message: ': ¡El teléfono no puede estar en blanco, es un campo requerido!'},
         format: { with: /\d{9}\z/i, message: ': ¡El teléfono debe contener 9 números!'},
         length: { maximum: 9, message: ': ¡El teléfono no puede contener más de 9 números!'}
-    validates :informacion,
-       length: {minimum: 14, message: ': ¡La información debe de tener como mínimo 14 caracteres!'}
-    validates :rss_facebook,
-        presence: {presence: true, message: ': ¡La página de Facebook no puede estar en blanco, es un campo requerido!'},
-        length: {minimum: 14, message: ': ¡La página de Facebook debe de tener como mínimo 14 caracteres!'}
-    validates :rss_instagram,
-        length: {minimum: 14, message: ': ¡La página de Instagram debe de tener como mínimo 14 caracteres!'}
+
 end
