@@ -1,34 +1,37 @@
-<h1>Sitio de Platos típicos: <%= @gast_plato.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @gast_plato.titulo %>
-</p>
+<div class="contenedor">
+  <h1>Sitio de Platos típicos: <%= @gast_plato.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @gast_plato.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @gast_plato.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @gast_plato.subtitulo %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @gast_plato.localizacion %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @gast_plato.localizacion %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @gast_plato.telefono %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @gast_plato.telefono %>
+  </p>
 
-<p>
-  <strong>Información:</strong>
-  <%= @gast_plato.informacion %>
-</p>
+  <p>
+    <strong>Información:</strong>
+    <%= @gast_plato.informacion %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @gast_plato.rss_facebook %>
-</p>
-
-<%= link_to 'Editar', edit_gast_plato_path(@gast_plato) %> |
-<%= link_to 'Atrás', gast_platos_path %>
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @gast_plato.rss_facebook %>
+  </p>
+  <div class="enlace">
+      <%= link_to 'Editar', edit_gast_plato_path(@gast_plato) %> 
+  <%= link_to 'Atrás', gast_platos_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>
