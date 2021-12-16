@@ -1,6 +1,9 @@
-<h1>Editar Actividad de Senderismo: <%= @act_senderismo.subtitulo%></h1>
+<div class="contenedor">
+    <h1>Editar Actividad de Senderismo: <%= @act_senderismo.subtitulo%></h1>
 
-<%= render 'form', act_senderismo: @act_senderismo %>
-
-<%= link_to 'Mostrar', @act_senderismo %> |
-<%= link_to 'Atrás', act_senderismos_path %>
+    <%= render 'form', act_senderismo: @act_senderismo %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @act_senderismo %>
+        <%= link_to 'Atrás', act_senderismos_path %>
+    </div>
+</div>

@@ -1,31 +1,34 @@
-<h1>Parque temático: <%= @act_ptematico.subtitulo%></h1>
+<div class="contenedor">
+  <h1>Parque temático: <%= @act_ptematico.subtitulo%></h1>
 
-<p>
-  <strong>Título:</strong>
-  <%= @act_ptematico.titulo %>
-</p>
+  <p>
+    <strong>Título:</strong>
+    <%= @act_ptematico.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @act_ptematico.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @act_ptematico.subtitulo %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @act_ptematico.localizacion %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @act_ptematico.localizacion %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @act_ptematico.telefono %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @act_ptematico.telefono %>
+  </p>
 
-<p>
-  <strong>Sitio web:</strong>
-  <%= @act_ptematico.sitioweb %>
-</p>
+  <p>
+    <strong>Sitio web:</strong>
+    <%= @act_ptematico.sitioweb %>
+  </p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_act_ptematico_path(@act_ptematico) %>
+    <%= link_to 'Atrás', act_ptematicos_path %>
+  </div>
 
-<%= link_to 'Editar', edit_act_ptematico_path(@act_ptematico) %> |
-<%= link_to 'Atrás', act_ptematicos_path %>
-
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
+</div>

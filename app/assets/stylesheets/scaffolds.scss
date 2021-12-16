@@ -21,13 +21,13 @@ a:visited {
   color: #666; }
 
 a:hover {
-  color: #fff;
-  background-color: #000; }
+  color: black;
+  background-color:grey; 
+}
 
 /* Añadido */
 table {
   border-collapse:collapse;
-  //padding:0;
 } 
 
 td {
@@ -70,14 +70,17 @@ div.actions {
 .field_with_errors {
   padding: 2px;
   background-color: red;
-  display: table; }
+  
+  display: table;
+}
 
 #error_explanation {
   /*width: 450px;*/
   border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+ }
 
 #error_explanation h2 {
   text-align: left;
@@ -129,14 +132,18 @@ input[type=submit]{
 
 input[type=text], input[type=email], input[type=url]{
   padding: 8px;
-  width: 100%;
+  width: 230px;
 }
 
 .field {
-  width: 140%;
+  width: 230px;
 }
 
 textarea {
   width: 25%;
   height: 120px;
+}
+
+label {
+  padding: 3px;
 }
