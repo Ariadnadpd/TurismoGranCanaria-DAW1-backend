@@ -1,6 +1,9 @@
-<h1>Editar la Pregunta frecuente: <%= @preguntasfrecuente.id%></h1>
+<div class="contenedor">
+    <h1>Editar la Pregunta frecuente: <%= @preguntasfrecuente.id%></h1>
 
-<%= render 'form', preguntasfrecuente: @preguntasfrecuente %>
-
-<%= link_to 'Mostrar', @preguntasfrecuente %> |
-<%= link_to 'Atrás', preguntasfrecuentes_path %>
+    <%= render 'form', preguntasfrecuente: @preguntasfrecuente %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @preguntasfrecuente %>
+        <%= link_to 'Atrás', preguntasfrecuentes_path %>
+    </div>
+</div>

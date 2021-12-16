@@ -10,18 +10,19 @@
       </ul>
     </div>
   <% end %>
+  <div class="contenedor">
+    <div class="field">
+      <%= form.label :pregunta %>
+      <%= form.text_area :pregunta %>
+    </div>
 
-  <div class="field">
-    <%= form.label :pregunta %>
-    <%= form.text_area :pregunta %>
-  </div>
+    <div class="field">
+      <%= form.label :respuesta %>
+      <%= form.text_area :respuesta %>
+    </div>
 
-  <div class="field">
-    <%= form.label :respuesta %>
-    <%= form.text_area :respuesta %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Guardar" %>
+    <div class="actions">
+      <%= form.submit "Guardar" %>
+    </div>
   </div>
 <% end %>
