@@ -1,6 +1,10 @@
-<h1>Editar sitio de Museo: <%= @adnd_museo.subtitulo%></h1>
+<div class="contenedor">
+    <h1>Editar sitio de Museo: <%= @adnd_museo.subtitulo%></h1>
 
-<%= render 'form', adnd_museo: @adnd_museo %>
+    <%= render 'form', adnd_museo: @adnd_museo %>
 
-<%= link_to 'Mostrar', @adnd_museo %> |
-<%= link_to 'Atrás', adnd_museos_path %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @adnd_museo %>
+        <%= link_to 'Atrás', adnd_museos_path %>
+    </div>
+</div>

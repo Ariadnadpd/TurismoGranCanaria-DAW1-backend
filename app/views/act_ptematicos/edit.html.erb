@@ -1,6 +1,9 @@
-<h1>Editar Actividad de Parques temáticos: <%= @act_ptematico.subtitulo%></h1>
+<div class="contenedor">
+    <h1>Editar Actividad de Parques temáticos: <%= @act_ptematico.subtitulo%></h1>
 
-<%= render 'form', act_ptematico: @act_ptematico %>
-
-<%= link_to 'Mostrar', @act_ptematico %> |
-<%= link_to 'Atrás', act_ptematicos_path %>
+    <%= render 'form', act_ptematico: @act_ptematico %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @act_ptematico %>
+        <%= link_to 'Atrás', act_ptematicos_path %>
+    </div>
+</div>

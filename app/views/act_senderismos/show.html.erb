@@ -1,21 +1,23 @@
-<h1>Senderismo: <%= @act_senderismo.subtitulo %></h1>
+<div class="contenedor">
+  <h1>Senderismo: <%= @act_senderismo.subtitulo %></h1>
 
-<p>
-  <strong>Título:</strong>
-  <%= @act_senderismo.titulo %>
-</p>
+  <p>
+    <strong>Título:</strong>
+    <%= @act_senderismo.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @act_senderismo.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @act_senderismo.subtitulo %>
+  </p>
 
-<p>
-  <strong>Ruta:</strong>
-  <%= @act_senderismo.ruta %>
-</p>
-
-<%= link_to 'Editar', edit_act_senderismo_path(@act_senderismo) %> |
-<%= link_to 'Atrás', act_senderismos_path %>
-
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Ruta:</strong>
+    <%= @act_senderismo.ruta %>
+  </p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_act_senderismo_path(@act_senderismo) %>
+    <%= link_to 'Atrás', act_senderismos_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>
