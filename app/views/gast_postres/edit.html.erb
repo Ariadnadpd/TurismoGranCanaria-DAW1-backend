@@ -1,6 +1,9 @@
-<h1>Editar sitio de postres típicos: <%= @gast_postre.subtitulo%> </h1>
+<div class="contenedor">
+    <h1>Editar sitio de postres típicos: <%= @gast_postre.subtitulo%> </h1>
 
-<%= render 'form', gast_postre: @gast_postre %>
-
-<%= link_to 'Mostrar', @gast_postre %> |
-<%= link_to 'Atrás', gast_postres_path %>
+    <%= render 'form', gast_postre: @gast_postre %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @gast_postre %> 
+        <%= link_to 'Atrás', gast_postres_path %>
+    </div>
+</div>

@@ -1,41 +1,43 @@
+<div class="contenedor">
+<  <h1>Sitio de Postres típicos: <%= @gast_postre.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @gast_postre.titulo %>
+  </p>
 
-<h1>Sitio de Postres típicos: <%= @gast_postre.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @gast_postre.titulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @gast_postre.subtitulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @gast_postre.subtitulo %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @gast_postre.localizacion %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @gast_postre.localizacion %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @gast_postre.telefono %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @gast_postre.telefono %>
-</p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @gast_postre.rss_facebook %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @gast_postre.rss_facebook %>
-</p>
+  <p>
+    <strong>Página de Instagram:</strong>
+    <%= @gast_postre.rss_instagram %>
+  </p>
 
-<p>
-  <strong>Página de Instagram:</strong>
-  <%= @gast_postre.rss_instagram %>
-</p>
-
-<p>
-  <strong>Información:</strong>
-  <%= @gast_postre.informacion %>
-</p>
-
-<%= link_to 'Editar', edit_gast_postre_path(@gast_postre) %> |
-<%= link_to 'Atrás', gast_postres_path %>
-
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Información:</strong>
+    <%= @gast_postre.informacion %>
+  </p>
+  
+  <div class="enlace">
+    <%= link_to 'Editar', edit_gast_postre_path(@gast_postre) %> |
+    <%= link_to 'Atrás', gast_postres_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>

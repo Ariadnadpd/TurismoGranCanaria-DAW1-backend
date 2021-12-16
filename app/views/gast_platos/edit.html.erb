@@ -1,6 +1,10 @@
-<h1>Editar sitio de platos típicos: <%= @gast_plato.subtitulo%> </h1>
+ <div class="contenedor">
+    <h1>Editar sitio de platos típicos: <%= @gast_plato.subtitulo%> </h1>
 
-<%= render 'form', gast_plato: @gast_plato %>
+    <%= render 'form', gast_plato: @gast_plato %>
 
-<%= link_to 'Mostrar', @gast_plato %> |
-<%= link_to 'Atrás', gast_platos_path %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @gast_plato %>
+        <%= link_to 'Atrás', gast_platos_path %>
+    </div>
+</div>
