@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
+  <div class="contenedor">
+    <div class="field">
+      <%= form.label "Título" %>
+      <%= form.text_field :titulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Título" %>
-    <%= form.text_field :titulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Subtítulo" %>
+      <%= form.text_field :subtitulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Subtítulo" %>
-    <%= form.text_field :subtitulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Localización" %>
+      <%= form.text_field :localizacion %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Localización" %>
-    <%= form.text_field :localizacion %>
-  </div>
+    <div class="field">
+      <%= form.label "Teléfono" %>
+      <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Teléfono" %>
-    <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
-  </div>
+    <div class="field">
+      <%= form.label "Sitio web" %>
+      <%= form.url_field :sitioweb, placeholder: 'https://ejemplo.com' %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Sitio web" %>
-    <%= form.url_field :sitioweb, placeholder: 'https://ejemplo.com' %>
+    <div class="actions">
+      <%= form.submit "Guardar" %>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit "Guardar" %>
-  </div>
-<% end %>
+  <% end %>

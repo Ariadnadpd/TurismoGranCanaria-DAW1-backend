@@ -1,6 +1,10 @@
-<h1>Editar Actividad de Buceo: <%= @act_buceo.subtitulo%></h1>
+<div class="contenedor">
+    <h1>Editar Actividad de Buceo: <%= @act_buceo.subtitulo%></h1>
 
-<%= render 'form', act_buceo: @act_buceo %>
+    <%= render 'form', act_buceo: @act_buceo %>
 
-<%= link_to 'Mostrar', @act_buceo %> |
-<%= link_to 'Atrás', act_buceos_path %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @act_buceo %> 
+        <%= link_to 'Atrás', act_buceos_path %>
+    </div>
+</div>

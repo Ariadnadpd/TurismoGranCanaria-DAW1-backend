@@ -95,14 +95,14 @@ div.actions {
 label {
   display: block; }
 
-.tabla {
+.contenedor {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.tabla h1{
+.contenedor h1{
   padding:12px;
   color: #5d6d7e;
 }
@@ -120,4 +120,23 @@ label {
   background-color: #5d6d7e;
   color: #fff;
   text-decoration: none; 
+}
+
+input[type=submit]{
+  display:block;
+  margin:auto;
+}
+
+input[type=text], input[type=email], input[type=url]{
+  padding: 8px;
+  width: 100%;
+}
+
+.field {
+  width: 140%;
+}
+
+textarea {
+  width: 25%;
+  height: 120px;
 }
