@@ -1,16 +1,19 @@
-<h1>Pregunta frecuente con id: <%= @preguntasfrecuente.id%> </h1>
+<div class="contenedor">
+  <h1>Pregunta frecuente con id: <%= @preguntasfrecuente.id%> </h1>
 
-<p>
-  <strong>Pregunta:</strong>
-  <%= @preguntasfrecuente.pregunta %>
-</p>
+  <p>
+    <strong>Pregunta:</strong>
+    <%= @preguntasfrecuente.pregunta %>
+  </p>
 
-<p>
-  <strong>Respuesta:</strong>
-  <%= @preguntasfrecuente.respuesta %>
-</p>
+  <p>
+    <strong>Respuesta:</strong>
+    <%= @preguntasfrecuente.respuesta %>
+  </p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_preguntasfrecuente_path(@preguntasfrecuente) %>
+    <%= link_to 'Atrás', preguntasfrecuentes_path %>
+  </div>
 
-<%= link_to 'Editar', edit_preguntasfrecuente_path(@preguntasfrecuente) %> |
-<%= link_to 'Atrás', preguntasfrecuentes_path %>
-
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
+</div>

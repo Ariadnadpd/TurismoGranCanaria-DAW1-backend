@@ -10,23 +10,24 @@
       </ul>
     </div>
   <% end %>
+  <div class="contenedor">
+    <div class="field">
+      <%= form.label "Título" %>
+      <%= form.text_field :titulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Título" %>
-    <%= form.text_field :titulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Subtítulo" %>
+      <%= form.text_field :subtitulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Subtítulo" %>
-    <%= form.text_field :subtitulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Localización" %>
+      <%= form.text_field :localizacion %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Localización" %>
-    <%= form.text_field :localizacion %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Guardar" %>
+    <div class="actions">
+      <%= form.submit "Guardar" %>
+    </div>
   </div>
 <% end %>
