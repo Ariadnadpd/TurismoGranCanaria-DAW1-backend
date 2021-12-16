@@ -1,6 +1,9 @@
-<h1>Editar sitio de Parques naturales: <%= @adond_pnaturale.subtitulo %></h1>
+<div class="contenedor">
+    <h1>Editar sitio de Parques naturales: <%= @adnd_pnaturale.subtitulo %> </h1>
 
-<%= render 'form', adnd_pnaturale: @adnd_pnaturale %>
-
-<%= link_to 'Mostrar', @adnd_pnaturale %> |
-<%= link_to 'Atrás', adnd_pnaturales_path %>
+    <%= render 'form', adnd_pnaturale: @adnd_pnaturale %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @adnd_pnaturale %>
+        <%= link_to 'Atrás', adnd_pnaturales_path %>
+    </div>
+</div>

@@ -1,21 +1,23 @@
-<h1>Parque natural: <%= @adnd_pnaturale.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @adnd_pnaturale.titulo %>
-</p>
+<div class="contenedor">
+  <h1>Parque natural: <%= @adnd_pnaturale.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @adnd_pnaturale.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @adnd_pnaturale.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @adnd_pnaturale.subtitulo %>
+  </p>
 
-<p>
-  <strong>Ruta:</strong>
-  <%= @adnd_pnaturale.ruta %>
-</p>
+  <p>
+    <strong>Ruta:</strong>
+    <%= @adnd_pnaturale.ruta %>
+  </p>
 
-<%= link_to 'Editar', edit_adnd_pnaturale_path(@adnd_pnaturale) %> |
-<%= link_to 'Atrás', adnd_pnaturales_path %>
-
-<p id="notice"><%= notice %></p>
-
+  <div class="enlace">
+    <%= link_to 'Editar', edit_adnd_pnaturale_path(@adnd_pnaturale) %>
+    <%= link_to 'Atrás', adnd_pnaturales_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>
