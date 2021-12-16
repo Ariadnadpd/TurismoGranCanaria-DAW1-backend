@@ -1,32 +1,95 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>INICIO</title>
-  </head>
+<div class="contenedor">
+<h1>INICIO</h1>
+<div class="box">
+  <div>
+    <table class="table_home">
+      <tr><th colspan="2">GASTRONOMIA</th></tr>
+      <tr>
+        <td><%= link_to 'Platos', gast_platos_path %></td>
+        <td><a href="../gast_platos.json">Platos JSON</a></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Postres', gast_postres_path %></td>
+        <td><a href="../gast_postres.json">Postres JSON</a></td>
+      </tr>
+    </table>
+  </div>
 
-  <body>
-    <h1>INICIO</h1>
+  <br>
+  <div>
+    <table class="table_home">
+      <tr><th colspan="2">PREGUNTAS FRECUENTES</th></tr>
+      <tr><td><%= link_to 'Preguntas Frecuentes', preguntasfrecuentes_path %></td></tr>
+      <tr><td><a href="../preguntasfrecuentes.json">Preguntas Frecuentes JSON</a></td></tr>
+    </table>
+  </div>
   
-    <h3>ARTESANIA</h3>
-        <%= link_to 'Artesania - Alfarería', art_alfareris_path %><br>
-        <%= link_to 'Artesania - Cantería', art_canteris_path %><br>
-        <%= link_to 'Artesania - Cuchillería', art_cuchilleris_path %><br>
-        <%= link_to 'Artesania - Trajes tradicionales', art_ttradicionales_path %><br>
-    
-    <h3>GASTRONOMIA</h3>
-        <%= link_to 'Gastronomia - Platos', gast_platos_path %><br>
-        <%= link_to 'Gastronomia - Postres', gast_postres_path %><br>
-    <h3>A DONDE IR</h3>
-        <%= link_to 'A donde ir - Museos', adnd_museos_path %><br>
-        <%= link_to 'A donde ir - Parques Naturales', adnd_pnaturales_path %><br>
-        <%= link_to 'A donde ir - Playas', adnd_playas_path %><br>
-    <h3>ACTIVIDADES</h3>
-        <%= link_to 'Actividades - Buceo', act_buceos_path %><br>
-        <%= link_to 'Actividades - Parques temáticos', act_ptematicos_path %><br>
-        <%= link_to 'Actividades - Senderismo', act_senderismos_path %><br>
+  <br>
 
-    <h3>PREGUNTAS FRECUENTES</h3>
-        <%= link_to 'Preguntas Frecuentes', preguntasfrecuentes_path %><br>
+  <div>
+    <table class="table_home">
+      <tr><th colspan="2">A DONDE IR</th></tr>
+      <tr>
+        <td><%= link_to 'Museos', adnd_museos_path %></td>
+        <td><a href="../adnd_museos.json">Museos JSON </a></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Parques Naturales', adnd_pnaturales_path %></td>
+        <td><a href="../adnd_pnaturales.json">Parques Naturales JSON</a></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Playas', adnd_playas_path %></td>
+        <td><a href="../adnd_playas.json">Playas JSON</a></td>
+      </tr>
+    </table>
+  </div>
 
-  </body>
-</html>
+
+  <br>
+  <div>
+    <table class="table_home">
+      <tr><th colspan="2">ACTIVIDADES</th></tr>
+      <tr>
+        <td><%= link_to 'Buceo', act_buceos_path %></td>
+        <td><a href="../act_buceos.json">Buceo JSON</a></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Parques temáticos', act_ptematicos_path %></td>
+        <td><a href="../act_ptematicos.json">Parques temáticos JSON</a></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Senderismo', act_senderismos_path %></td>
+        <td><a href="../act_senderismos.json">Senderismo JSON</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+  <div>
+    <table class="table_home">
+      
+      <tr><th colspan="2">ARTESANIA</th></tr>
+      <tr>
+        <td><%= link_to 'Alfarería', art_alfareris_path %></td>
+        <td><a href="../art_alfareris.json">Alfarería JSON</a></td>      
+      </tr>
+
+      <tr>
+        <td><%= link_to 'Cantería', art_canteris_path %></td>
+        <td><a href="../art_canteris.json"> Cantería JSON </a></td>      
+      </tr>
+      
+      <tr>
+        <td><%= link_to 'Cuchillería', art_cuchilleris_path %></td>
+        <td><a href="../art_cuchilleris.json">Cuchillería JSON</a></td>
+      </tr>
+        
+      <tr>
+        <td><%= link_to 'Trajes tradicionales', art_ttradicionales_path %></td>
+        <td><a href="../art_ttradicionales.json">Trajes tradicionales JSON</a></td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+</div>

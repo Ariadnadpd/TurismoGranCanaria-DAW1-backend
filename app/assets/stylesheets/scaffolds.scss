@@ -60,6 +60,21 @@ td:visited {
 td {
   padding: 0 5px 7px; }
 
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.box div {
+  margin: 30px;
+  flex:30;  
+}
+  
+.box div .table_home {
+  width: 100%;
+}
+
 div.field,
 div.actions {
   margin-bottom: 10px; }
