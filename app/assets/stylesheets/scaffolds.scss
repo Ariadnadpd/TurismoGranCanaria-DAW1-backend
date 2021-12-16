@@ -1,7 +1,8 @@
 body {
-  background-color: #fff;
+  background-color: #d0d3d4; 
   color: #333;
-  margin: 33px; }
+  margin: 33px; 
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -25,24 +26,36 @@ a:hover {
 
 /* Añadido */
 table {
-  border:collapse;
+  border-collapse:collapse;
+  //padding:0;
 } 
+
+td {
+  background-color: #f2fff2;
+}
 
 td, th {
   border: 0.5px solid black;
+  //border
 }
 
 th {
-  background-color: lightseagreen;
+  background-color:  #5d6d7e;
+  color:#fff;
+  padding-bottom: 5px;
 }
 
-tr:nth-child(even){background-color: #f2fff2}
-tr:hover {background-color: rgb(157, 212, 205);}
+td:hover {background-color: rgb(157, 212, 205);}
 
 /*****/
+td a:hover {
+  background-color:  #d0d3d4;
+  color: black;
+}
 
-th {
-  padding-bottom: 5px; }
+td:visited {
+  color:#666;
+}
 
 td {
   padding: 0 5px 7px; }
@@ -81,3 +94,30 @@ div.actions {
 
 label {
   display: block; }
+
+.tabla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tabla h1{
+  padding:12px;
+  color: #5d6d7e;
+}
+
+.enlace {
+  margin: 10px;
+  padding: 10px;
+}
+.enlace a{
+  padding: 6px;
+  border-radius: 0.25em;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  background-color: #5d6d7e;
+  color: #fff;
+  text-decoration: none; 
+}
