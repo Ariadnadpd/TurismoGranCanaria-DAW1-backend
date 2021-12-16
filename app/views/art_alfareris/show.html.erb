@@ -1,42 +1,45 @@
+<div class="contenedor">
+  <h1>Alfarería: <%= @art_alfareri.subtitulo%></h1>
 
-<h1>Alfarería: <%= @art_alfareri.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @art_alfareri.titulo %>
+  </p>
 
-<p>
-  <strong>Título:</strong>
-  <%= @art_alfareri.titulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @art_alfareri.subtitulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @art_alfareri.subtitulo %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @art_alfareri.localizacion %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @art_alfareri.localizacion %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @art_alfareri.telefono %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @art_alfareri.telefono %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= @art_alfareri.email %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @art_alfareri.email %>
-</p>
+  <p>
+    <strong>Información:</strong>
+    <%= @art_alfareri.informacion %>
+  </p>
 
-<p>
-  <strong>Información:</strong>
-  <%= @art_alfareri.informacion %>
-</p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @art_alfareri.rss_facebook %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @art_alfareri.rss_facebook %>
-</p>
-
-<%= link_to 'Editar', edit_art_alfareri_path(@art_alfareri) %> |
-<%= link_to 'Atrás', art_alfareris_path %>
-
-<p id="notice"><%= notice %></p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_art_alfareri_path(@art_alfareri) %> |
+    <%= link_to 'Atrás', art_alfareris_path %>
+  </div>
+  
+  <p id="notice"><%= notice %></p>
+</div>

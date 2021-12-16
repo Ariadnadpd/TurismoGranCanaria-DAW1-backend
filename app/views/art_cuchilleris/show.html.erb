@@ -1,34 +1,37 @@
-<h1>Cuchillos Canarios: <%= @art_cuchilleri.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @art_cuchilleri.titulo %>
-</p>
+<div class="contenedor">
+  <h1>Cuchillos Canarios: <%= @art_cuchilleri.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @art_cuchilleri.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @art_cuchilleri.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @art_cuchilleri.subtitulo %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @art_cuchilleri.localizacion %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @art_cuchilleri.localizacion %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @art_cuchilleri.telefono %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @art_cuchilleri.telefono %>
+  </p>
 
-<p>
-  <strong>Información:</strong>
-  <%= @art_cuchilleri.informacion %>
-</p>
+  <p>
+    <strong>Información:</strong>
+    <%= @art_cuchilleri.informacion %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @art_cuchilleri.rss_facebook %>
-</p>
-
-<%= link_to 'Editar', edit_art_cuchilleri_path(@art_cuchilleri) %> |
-<%= link_to 'Atrás', art_cuchilleris_path %>
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @art_cuchilleri.rss_facebook %>
+  </p>
+    <div class="enlace">
+      <%= link_to 'Editar', edit_art_cuchilleri_path(@art_cuchilleri) %>
+      <%= link_to 'Atrás', art_cuchilleris_path %>
+    </div>
+  <p id="notice"><%= notice %></p>
+</div>

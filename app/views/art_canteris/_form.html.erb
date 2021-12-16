@@ -10,38 +10,40 @@
       </ul>
     </div>
   <% end %>
+  
+  <div class="contenedor">
+    <div class="field">
+      <%= form.label "Título" %>
+      <%= form.text_field :titulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Título" %>
-    <%= form.text_field :titulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Subtítulo" %>
+      <%= form.text_field :subtitulo %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Subtítulo" %>
-    <%= form.text_field :subtitulo %>
-  </div>
+    <div class="field">
+      <%= form.label "Localización" %>
+      <%= form.text_field :localizacion %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Localización" %>
-    <%= form.text_field :localizacion %>
-  </div>
+    <div class="field">
+      <%= form.label "Teléfono" %>
+      <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Teléfono" %>
-    <%= form.text_field :telefono, placeholder: 'XXX-XXX-XXX' %>
-  </div>
+    <div class="field">
+      <%= form.label "Información" %>
+      <%= form.url_field :informacion, placeholder: 'https://ejemplo.com' %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Información" %>
-    <%= form.url_field :informacion, placeholder: 'https://ejemplo.com' %>
-  </div>
+    <div class="field">
+      <%= form.label "Página de Facebook" %>
+      <%= form.url_field :rss_facebook, placeholder: 'https://www.facebook.com/Nombre' %>
+    </div>
 
-  <div class="field">
-    <%= form.label "Página de Facebook" %>
-    <%= form.url_field :rss_facebook, placeholder: 'https://www.facebook.com/Nombre' %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Guardar" %>
+    <div class="actions">
+      <%= form.submit "Guardar" %>
+    </div>
   </div>
 <% end %>

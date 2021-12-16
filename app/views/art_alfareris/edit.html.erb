@@ -1,6 +1,9 @@
-<h1>Editar sitio de Alfareria: <%= @art_alfareri.subtitulo%> </h1>
+<div class="contenedor">
+    <h1>Editar sitio de Alfareria: <%= @art_alfareri.subtitulo%> </h1>
 
-<%= render 'form', art_alfareri: @art_alfareri %>
-
-<%= link_to 'Mostrar', @art_alfareri %> |
-<%= link_to 'Atrás', art_alfareris_path %>
+    <%= render 'form', art_alfareri: @art_alfareri %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @art_alfareri %> 
+        <%= link_to 'Atrás', art_alfareris_path %>
+    </div>
+</div>

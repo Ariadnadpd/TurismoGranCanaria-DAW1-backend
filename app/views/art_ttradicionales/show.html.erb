@@ -1,39 +1,42 @@
-<h1>Trajes tradicionales: <%= @art_ttradicionale.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @art_ttradicionale.titulo %>
-</p>
+<div class="contenedor">
+  <h1>Trajes tradicionales: <%= @art_ttradicionale.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @art_ttradicionale.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @art_ttradicionale.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @art_ttradicionale.subtitulo %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @art_ttradicionale.localizacion %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @art_ttradicionale.localizacion %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @art_ttradicionale.telefono %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @art_ttradicionale.telefono %>
+  </p>
 
-<p>
-  <strong>Información:</strong>
-  <%= @art_ttradicionale.informacion %>
-</p>
+  <p>
+    <strong>Información:</strong>
+    <%= @art_ttradicionale.informacion %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @art_ttradicionale.rss_facebook %>
-</p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @art_ttradicionale.rss_facebook %>
+  </p>
 
-<p>
-  <strong>Página de Instagram:</strong>
-  <%= @art_ttradicionale.rss_instagram %>
-</p>
-
-<%= link_to 'Editar', edit_art_ttradicionale_path(@art_ttradicionale) %> |
-<%= link_to 'Atrás', art_ttradicionales_path %>
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Página de Instagram:</strong>
+    <%= @art_ttradicionale.rss_instagram %>
+  </p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_art_ttradicionale_path(@art_ttradicionale) %>
+    <%= link_to 'Atrás', art_ttradicionales_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>

@@ -1,6 +1,9 @@
-<h1>Editar sitio de Cuchillos canarios: <%= @art_cuchilleri.subtitulo%> </h1>
+<div class="contenedor">
+    <h1>Editar sitio de Cuchillos canarios: <%= @art_cuchilleri.subtitulo%> </h1>
 
-<%= render 'form', art_cuchilleri: @art_cuchilleri %>
-
-<%= link_to 'Mostrar', @art_cuchilleri %> |
-<%= link_to 'Atrás', art_cuchilleris_path %>
+    <%= render 'form', art_cuchilleri: @art_cuchilleri %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @art_cuchilleri %> 
+        <%= link_to 'Atrás', art_cuchilleris_path %>
+    </div>
+</div>

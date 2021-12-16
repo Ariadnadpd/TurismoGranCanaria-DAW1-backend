@@ -1,7 +1,9 @@
-<h1>Editar sitio de Cantería: <%= @art_canteri.subtitulo%> </h1>
+<div class="contenedor">
+    <h1>Editar sitio de Cantería: <%= @art_canteri.subtitulo%> </h1>
 
-
-<%= render 'form', art_canteri: @art_canteri %>
-
-<%= link_to 'Mostrar', @art_canteri %> |
-<%= link_to 'Atrás', art_canteris_path %>
+    <%= render 'form', art_canteri: @art_canteri %>
+    <div class="enlace">
+        <%= link_to 'Mostrar', @art_canteri %> 
+        <%= link_to 'Atrás', art_canteris_path %>
+    </div>
+</div>

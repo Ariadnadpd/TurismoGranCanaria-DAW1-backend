@@ -1,34 +1,37 @@
-<h1>Cantería: <%= @art_canteri.subtitulo%></h1>
-<p>
-  <strong>Título:</strong>
-  <%= @art_canteri.titulo %>
-</p>
+<div class="contenedor">
+  <h1>Cantería: <%= @art_canteri.subtitulo%></h1>
+  <p>
+    <strong>Título:</strong>
+    <%= @art_canteri.titulo %>
+  </p>
 
-<p>
-  <strong>Subtítulo:</strong>
-  <%= @art_canteri.subtitulo %>
-</p>
+  <p>
+    <strong>Subtítulo:</strong>
+    <%= @art_canteri.subtitulo %>
+  </p>
 
-<p>
-  <strong>Localización:</strong>
-  <%= @art_canteri.localizacion %>
-</p>
+  <p>
+    <strong>Localización:</strong>
+    <%= @art_canteri.localizacion %>
+  </p>
 
-<p>
-  <strong>Teléfono:</strong>
-  <%= @art_canteri.telefono %>
-</p>
+  <p>
+    <strong>Teléfono:</strong>
+    <%= @art_canteri.telefono %>
+  </p>
 
-<p>
-  <strong>Información:</strong>
-  <%= @art_canteri.informacion %>
-</p>
+  <p>
+    <strong>Información:</strong>
+    <%= @art_canteri.informacion %>
+  </p>
 
-<p>
-  <strong>Página de Facebook:</strong>
-  <%= @art_canteri.rss_facebook %>
-</p>
-
-<%= link_to 'Editar', edit_art_canteri_path(@art_canteri) %> |
-<%= link_to 'Atrás', art_canteris_path %>
-<p id="notice"><%= notice %></p>
+  <p>
+    <strong>Página de Facebook:</strong>
+    <%= @art_canteri.rss_facebook %>
+  </p>
+  <div class="enlace">
+    <%= link_to 'Editar', edit_art_canteri_path(@art_canteri) %> 
+    <%= link_to 'Atrás', art_canteris_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+</div>
